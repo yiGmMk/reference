@@ -42,11 +42,11 @@ jobs:
           body: |
             ${{steps.contributors.outputs.htmlList}}
 
-      - name: Create Tag
-        id: create_tag
-        uses: jaywcjlove/create-tag-action@main
-        with:
-          package-path: ./package.json
+      # - name: Create Tag
+      #   id: create_tag
+      #   uses: jaywcjlove/create-tag-action@main
+      #   with:
+      #     package-path: ./package.json
 
       - name: gh-pages README.md
         working-directory: dist
